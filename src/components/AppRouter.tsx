@@ -4,6 +4,9 @@ import { Clients } from "./Clients";
 import { Orders } from "./Orders";
 import { Services } from "./Services";
 import { Coupons } from "./Coupons";
+import { Positions } from "./Positions";
+import { Employees } from "./Employees";
+import { Reviews } from "./Reviews";
 
 interface IRoute {
   path: string;
@@ -31,6 +34,21 @@ export const AppRouter = () => {
     {
       path: "/coupons",
       component: <Coupons />,
+      exact: true,
+    },
+    {
+      path: "/positions",
+      component: <Positions />,
+      exact: true,
+    },
+    {
+      path: "/employees",
+      component: <Employees />,
+      exact: true,
+    },
+    {
+      path: "/reviews",
+      component: <Reviews />,
       exact: true,
     },
   ];
